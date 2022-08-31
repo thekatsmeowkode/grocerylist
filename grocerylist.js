@@ -1,7 +1,6 @@
 const userInput = document.getElementById('text-input');
 const buttonInput = document.getElementById('button-input');
 const groceryList = document.getElementById('grocery-list');
-const
 
 buttonInput.addEventListener('click', listAdd)
 function listAdd() {
@@ -9,5 +8,8 @@ function listAdd() {
     newListItem.className = 'groceryItem';
     newListItem.innerText = userInput.value;
     groceryList.appendChild(newListItem)
+    userInput.value=""
+    newListItem.addEventListener('click', function(){newListItem.style.textDecoration = 'line-through'})
+    newListItem.addEventListener('dblclick', function(){newListItem.remove()})
 }
-
+    
