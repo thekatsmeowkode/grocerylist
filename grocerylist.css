@@ -1,0 +1,46 @@
+:root {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
+
+#page-container {
+    display:flex; 
+    flex-direction:column; 
+    justify-content: center; 
+    align-items: center;}
+
+h1 {color:seagreen}
+
+#text-input {
+    background-color:seashell; 
+    border:1px dotted sienna; 
+    font-size: 20px;
+    border-radius: 5px;
+    color:seagreen
+    }
+
+::placeholder {
+    color:lightseagreen;
+    opacity: 50%
+}
+input[type=text]:focus {
+    outline-color: sienna;
+}
+
+#button-input {
+    background-color:bisque; 
+    border: 1px solid sienna;
+    font-size: 20px;
+    border-radius: 4px;
+    color:brown;
+    text-align:center;
+    }
+
+.input-container{
+    display:flex;
+    align-items: center;
+}
+
+.groceryItem {
+    font-size: 25px;
+    color:sienna;
+    margin: 20px auto;
+}

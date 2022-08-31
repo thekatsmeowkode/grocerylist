@@ -12,17 +12,20 @@ if double clicked, list item disappears -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <link rel="stylesheet" href="grocerylist.css">
     <script src="grocerylist.js" defer></script>
 </head>
 <body>
+<div id="page-container"> 
     <h1>Grocery List</h1>
-   <div id="input-container">
+    <div id="input-container">
         <input type="text" required id="text-input" placeholder="type name of item here">
         <input type="button" id="button-input" value="Add to List">
-   </div>
-   <div id="grocery-list">
+    </div>
+    <div id="grocery-list">
         <p class="groceryItem"></p>
-   </div>
+    </div>
+</div> 
 </body>
 </html>
 
